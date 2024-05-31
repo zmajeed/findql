@@ -22,14 +22,15 @@ using symbol_kind = FQParser::symbol_kind;
 using token = FQParser::token;
 
 TEST(Lexer, test_0) {
-  stringstream s("-kind");
+  stringstream s("find -empty");
   Lexer lexer(s);
 
   location loc{};
 
   auto token = lexer.yylex(loc);
+  EXPECT_EQ(token.kind(), FQParser::symbol_kind::S_FIND);
 
-  EXPECT_EQ(token.kind(), FQParser::symbol_kind::S_EMPTY);
+  EXPECT_EQ(lexer.yylex(loc).kind(), FQParser::symbol_kind::S_EMPTY);
 }
 
 }
