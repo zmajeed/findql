@@ -44,7 +44,7 @@ A `find` expression is composed of primaries like `-name`, `-type` and `-exec`. 
 
 Nearly all primaries start with dash `-`. This makes them look like commandline options. But primaries are not options but arguments to the `find` command that together make up a predicate expression.  Some operators do not have a dash prefix. These are the negation operator `!` though it's an alias for `-not`, the grouping operators `(` and `)`, and the comma operator `,`. Also the `-and` operator is implied if there isn't any other operator between two primaries.
 
-The `findql` grammar below is for the language described in the GNU Findutils manual. It uses terminology from the manual.
+The `findql` grammar below is for the language described in the GNU Findutils manual. It uses terminology from the manual. Symbols in all-caps or in quotes are lexical tokens.
 
 
 ```

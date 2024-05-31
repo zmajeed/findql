@@ -14,6 +14,7 @@ Here's an example with 2 directories and 2 files as given to `find`
 
 ```
 tree dir_0 dir_1 file_0.txt file_1.txt
+
 dir_0
 └── file_2.txt
 dir_1
@@ -27,6 +28,7 @@ file_1.txt  [error opening dir]
 
 ```
 ls -lR dir_0 dir_1 file_0.txt file_1.txt
+
 -rw-r--r-- 1 nobody nobody 39416 May 30 17:45 file_0.txt
 -rw-r--r-- 1 nobody nobody 51536 May 30 17:45 file_1.txt
 
