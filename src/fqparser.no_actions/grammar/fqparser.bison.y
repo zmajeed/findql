@@ -396,17 +396,17 @@ action:
   "-delete"
 | "-exec"                      exec_args
 | "-execdir"                   exec_args
-| "-fls"                       string_arg 
-| "-fprint"                    string_arg 
-| "-fprint0"                   string_arg 
-| "-fprintf"                   string_arg 
-| "-ls" 
+| "-fls"                       string_arg
+| "-fprint"                    string_arg
+| "-fprint0"                   string_arg
+| "-fprintf"                   string_arg
+| "-ls"
 | "-ok"                        exec_args
 | "-okdir"                     exec_args
-| "-print" 
-| "-print0" 
-| "-printf"                    string_arg 
-| "-prune" 
+| "-print"
+| "-print0"
+| "-printf"                    string_arg
+| "-prune"
 | "-quit"
 
 global_option:
@@ -438,7 +438,7 @@ number_arg: set_lexer_number_state "number" unset_lexer_state
 
 exec_args: set_lexer_exec_state strings ";" unset_lexer_state
 
-strings: "string" | strings "string" 
+strings: "string" | strings "string"
 
 // midrule actions
 
