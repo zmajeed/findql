@@ -94,7 +94,6 @@ ${RS}"
 depth:%d\
 ${FS}name:\"%f\"\
 ${FS}atime:\"%AF_%AT\"\
-${FS}atimeplus:\"%A+\"\
 ${FS}ctime:\"%BF_%BT\"\
 ${FS}fstype:\"%F\"\
 ${FS}gid:%G\

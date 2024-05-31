@@ -8,6 +8,8 @@ Flat format simply turns each line from `find` into a JSON record. This is usefu
 
 Nested format creates the directory tree hierarchy from `find` output. This is useful if you want to simulate a filesystem as JSON trees.
 
+The tool is very fast. It takes just a few seconds to get a JSON tree of over 100,000 files and directories.
+
 Here's an example with 2 directories and 2 files as given to `find`
 
 ```
